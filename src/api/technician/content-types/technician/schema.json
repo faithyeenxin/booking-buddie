@@ -15,7 +15,7 @@
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     },
     "bio": {
       "type": "richtext"
@@ -32,10 +32,12 @@
       ]
     },
     "contact_number": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "address": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

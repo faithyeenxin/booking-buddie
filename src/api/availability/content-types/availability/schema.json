@@ -4,7 +4,7 @@
   "info": {
     "singularName": "availability",
     "pluralName": "availabilities",
-    "displayName": "availability",
+    "displayName": "Slot Availability",
     "description": ""
   },
   "options": {
@@ -12,25 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "availability_id": {
-      "type": "uid"
-    },
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     },
     "start_datetime": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "end_datetime": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "is_recurring": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     },
     "recurring_days": {
-      "type": "json"
+      "type": "json",
+      "required": false
     }
   }
 }

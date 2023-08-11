@@ -15,18 +15,20 @@
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
+    },
+    "start_datetime": {
+      "type": "datetime",
+      "required": true
+    },
+    "end_datetime": {
+      "type": "datetime",
+      "required": true
     },
     "booking": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::booking.booking"
-    },
-    "start_datetime": {
-      "type": "datetime"
-    },
-    "end_datetime": {
-      "type": "datetime"
     }
   }
 }

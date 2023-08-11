@@ -70,7 +70,12 @@
       "enum": [
         "client ",
         "technician"
-      ]
+      ],
+      "required": true
+    },
+    "user_id": {
+      "type": "uid",
+      "targetField": "username"
     }
   }
 }

@@ -12,13 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "booking_id": {
-      "type": "uid"
-    },
     "user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     },
     "guest_email": {
       "type": "string"
@@ -27,10 +24,12 @@
       "type": "string"
     },
     "start_datetime": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "end_datetime": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "Status": {
       "type": "enumeration",
@@ -38,7 +37,9 @@
         "CONFIRMED",
         "PENDING",
         "CANCELLED"
-      ]
+      ],
+      "required": true,
+      "default": "PENDING"
     }
   }
 }
