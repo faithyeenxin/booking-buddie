@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "availabilities",
+  "info": {
+    "singularName": "availability",
+    "pluralName": "availabilities",
+    "displayName": "availability",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "availability_id": {
+      "type": "uid"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "start_datetime": {
+      "type": "datetime"
+    },
+    "end_datetime": {
+      "type": "datetime"
+    },
+    "is_recurring": {
+      "type": "boolean"
+    },
+    "recurring_days": {
+      "type": "json"
+    }
+  }
+}

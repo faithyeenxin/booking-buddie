@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unavailable_dates",
+  "info": {
+    "singularName": "unavailable-date",
+    "pluralName": "unavailable-dates",
+    "displayName": "Unavailable Date",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "booking": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::booking.booking"
+    },
+    "start_datetime": {
+      "type": "datetime"
+    },
+    "end_datetime": {
+      "type": "datetime"
+    }
+  }
+}

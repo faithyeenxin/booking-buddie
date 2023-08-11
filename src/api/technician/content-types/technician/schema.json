@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technicians",
+  "info": {
+    "singularName": "technician",
+    "pluralName": "technicians",
+    "displayName": "Technician",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "profile_picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}
