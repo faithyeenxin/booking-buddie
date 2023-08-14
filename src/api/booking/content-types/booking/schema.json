@@ -12,34 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
+    "users_permissions_user": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "bookings"
     },
     "guest_email": {
-      "type": "string"
+      "type": "email",
+      "required": false
     },
     "guest_contact_number": {
       "type": "string"
     },
-    "start_datetime": {
-      "type": "datetime",
-      "required": true
+    "slots_availability": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::slots-availability.slots-availability"
     },
-    "end_datetime": {
-      "type": "datetime",
-      "required": true
-    },
-    "Status": {
-      "type": "enumeration",
-      "enum": [
-        "CONFIRMED",
-        "PENDING",
-        "CANCELLED"
-      ],
-      "required": true,
-      "default": "PENDING"
+    "is_confirmed": {
+      "type": "boolean"
     }
   }
 }

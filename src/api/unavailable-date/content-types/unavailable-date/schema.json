@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "start_datetime": {
       "type": "datetime",
       "required": true
@@ -25,10 +20,16 @@
       "type": "datetime",
       "required": true
     },
-    "booking": {
+    "booking_id": {
+      "type": "string"
+    },
+    "technician": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::booking.booking"
+      "target": "api::technician.technician"
+    },
+    "is_recurring": {
+      "type": "boolean"
     }
   }
 }

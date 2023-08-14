@@ -12,13 +12,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
+    "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "technician"
     },
     "bio": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "profile_picture": {
       "type": "media",
@@ -38,6 +40,11 @@
     "address": {
       "type": "string",
       "required": true
+    },
+    "slots_availabilities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::slots-availability.slots-availability"
     }
   }
 }

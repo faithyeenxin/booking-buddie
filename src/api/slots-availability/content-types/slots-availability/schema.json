@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slots_availabilities",
+  "info": {
+    "singularName": "slots-availability",
+    "pluralName": "slots-availabilities",
+    "displayName": "Slots Availability",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start_time": {
+      "type": "time",
+      "required": true
+    },
+    "end_time": {
+      "type": "time",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
