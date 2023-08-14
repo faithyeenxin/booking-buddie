@@ -73,10 +73,6 @@
       ],
       "required": true
     },
-    "contact_number": {
-      "type": "uid",
-      "required": true
-    },
     "technician": {
       "type": "relation",
       "relation": "oneToOne",
@@ -88,6 +84,9 @@
       "relation": "oneToMany",
       "target": "api::booking.booking",
       "mappedBy": "users_permissions_user"
+    },
+    "contact_number": {
+      "type": "string"
     }
   }
 }

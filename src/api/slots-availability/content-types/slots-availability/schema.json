@@ -20,8 +20,9 @@
       "type": "time",
       "required": true
     },
-    "name": {
-      "type": "string"
+    "Name": {
+      "type": "string",
+      "required": true
     }
   }
 }

@@ -45,6 +45,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::slots-availability.slots-availability"
+    },
+    "name": {
+      "type": "string"
     }
   }
 }
