@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "package_transactions",
+  "info": {
+    "singularName": "package-transaction",
+    "pluralName": "package-transactions",
+    "displayName": "Package Transaction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Credits": {
+      "type": "integer",
+      "required": true
+    },
+    "Detail": {
+      "type": "string"
+    }
+  }
+}

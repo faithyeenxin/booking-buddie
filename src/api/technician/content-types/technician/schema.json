@@ -15,8 +15,7 @@
     "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "technician"
+      "target": "plugin::users-permissions.user"
     },
     "bio": {
       "type": "richtext",
@@ -41,13 +40,21 @@
       "type": "string",
       "required": true
     },
-    "slots_availabilities": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::slots-availability.slots-availability"
-    },
     "name": {
       "type": "string"
+    },
+    "Slots": {
+      "type": "json",
+      "required": true
+    },
+    "Intervals": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "Days": {
+      "type": "json",
+      "required": true
     }
   }
 }

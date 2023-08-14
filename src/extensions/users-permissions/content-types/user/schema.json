@@ -73,18 +73,6 @@
       ],
       "required": true
     },
-    "technician": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::technician.technician",
-      "mappedBy": "users_permissions_user"
-    },
-    "bookings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::booking.booking",
-      "mappedBy": "users_permissions_user"
-    },
     "contact_number": {
       "type": "string"
     }

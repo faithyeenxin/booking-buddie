@@ -27,10 +27,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::technician.technician"
-    },
-    "is_recurring": {
-      "type": "boolean",
-      "default": false
     }
   }
 }
