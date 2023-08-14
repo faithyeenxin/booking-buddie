@@ -32,28 +32,24 @@
         "audios"
       ]
     },
-    "contact_number": {
-      "type": "string",
-      "required": true
-    },
     "address": {
       "type": "string",
       "required": true
-    },
-    "name": {
-      "type": "string"
     },
     "Slots": {
       "type": "json",
       "required": true
     },
-    "Intervals": {
-      "type": "integer",
-      "required": true,
-      "default": 0
-    },
     "Days": {
       "type": "json",
+      "required": true
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "contact_number": {
+      "type": "string",
       "required": true
     }
   }

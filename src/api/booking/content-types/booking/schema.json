@@ -24,25 +24,21 @@
     "guest_contact_number": {
       "type": "string"
     },
-    "is_confirmed": {
-      "type": "boolean",
-      "default": false
-    },
     "technician": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::technician.technician"
     },
-    "date_time": {
-      "type": "datetime"
-    },
-    "duration": {
-      "type": "integer"
-    },
     "Status": {
       "type": "string",
       "required": true,
       "default": "\"PENDING\""
+    },
+    "start_datetime": {
+      "type": "datetime"
+    },
+    "end_datetime": {
+      "type": "datetime"
     }
   }
 }

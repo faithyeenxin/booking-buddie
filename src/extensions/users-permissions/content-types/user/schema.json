@@ -65,15 +65,10 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "Type": {
-      "type": "enumeration",
-      "enum": [
-        "client ",
-        "technician"
-      ],
-      "required": true
-    },
     "contact_number": {
+      "type": "string"
+    },
+    "Name": {
       "type": "string"
     }
   }
